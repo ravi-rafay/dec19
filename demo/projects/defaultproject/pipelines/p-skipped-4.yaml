@@ -1,0 +1,29 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Pipeline
+metadata:
+  name: p-skipped-4
+  project: defaultproject
+spec:
+  active: true
+  stages:
+  - config:
+      destinationRepo:
+        path:
+          name: demo
+        repository: dec19
+        revision: main
+      includedResources:
+      - name: Pipeline
+      systemToGitSync: true
+    name: s
+    type: SystemSync
+  triggers:
+  - config:
+      repo:
+        paths:
+        - name: dec16
+        provider: Github
+        repository: nov-28
+        revision: main
+    name: hook
+    type: Webhook
