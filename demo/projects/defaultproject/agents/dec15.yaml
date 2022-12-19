@@ -1,0 +1,12 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Agent
+metadata:
+  name: dec15
+  project: defaultproject
+spec:
+  active: true
+  cluster:
+    name: ravi-v2-eks-1
+  sharing: {}
+  type: Cluster
+  version: r1.22.0
