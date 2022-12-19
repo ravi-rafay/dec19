@@ -4,7 +4,7 @@ metadata:
   name: p-nov-28
   project: defaultproject
 spec:
-  active: true
+  active: false
   stages:
   - config:
       approvers:
