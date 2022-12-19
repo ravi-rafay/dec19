@@ -1,0 +1,19 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Namespace
+metadata:
+  name: ns-for-catalog
+  project: defaultproject
+spec:
+  limitRange:
+    container: {}
+    pod: {}
+  namespaceMeshPolicyParams: {}
+  placement:
+    labels:
+    - key: rafay.dev/clusterName
+      value: edge-c-1
+    - key: rafay.dev/clusterName
+      value: g-1
+    - key: rafay.dev/clusterName
+      value: g-2
+  resourceQuotas: {}
