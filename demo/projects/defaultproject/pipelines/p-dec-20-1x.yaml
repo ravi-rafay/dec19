@@ -4,7 +4,7 @@ metadata:
   name: p-dec-20-1x
   project: defaultproject
 spec:
-  active: true
+  active: false
   stages:
   - config:
       approvers:
