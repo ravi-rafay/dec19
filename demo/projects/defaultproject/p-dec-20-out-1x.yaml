@@ -4,12 +4,12 @@ metadata:
   name: p-dec-20-out-1x
   project: defaultproject
 spec:
-  active: false
+  active: true
   stages:
   - config:
       approvers:
       - userName: ravi@rafay.co
-      timeout: 2m11s
+      timeout: 2m12s
       type: Email
     name: approv
     type: Approval
