@@ -5,7 +5,10 @@ metadata:
   project: defaultproject
 spec:
   artifact:
-    artifact: {}
+    artifact:
+      paths:
+      - name: file://artifacts/addondec27/deployment.yaml
     type: Yaml
   namespace: ns-dec23-gitops
   sharing: {}
+  version: v1
