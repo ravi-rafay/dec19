@@ -1,0 +1,14 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Pipeline
+metadata:
+  name: p-dec-27-out-1x
+  project: defaultproject
+spec:
+  stages:
+  - config:
+      approvers:
+      - userName: ravi@rafay.co
+      timeout: 2m20s
+      type: Email
+    name: approv
+    type: Approval

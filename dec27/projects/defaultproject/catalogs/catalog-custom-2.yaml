@@ -1,0 +1,9 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Catalog
+metadata:
+  name: catalog-custom-2
+  project: defaultproject
+spec:
+  autoSync: true
+  repository: custom-helm-repo
+  type: HelmRepository
