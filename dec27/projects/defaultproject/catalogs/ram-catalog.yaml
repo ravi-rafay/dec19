@@ -1,0 +1,9 @@
+apiVersion: apps.k8smgmt.io/v3
+kind: Catalog
+metadata:
+  name: ram-catalog
+  project: defaultproject
+spec:
+  autoSync: true
+  repository: ram-helm
+  type: HelmRepository

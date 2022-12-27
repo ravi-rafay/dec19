@@ -1,0 +1,15 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  name: cron-addon
+  project: defaultproject
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/cron-addon/deployment.yaml
+    options: {}
+    type: Yaml
+  namespace: cron-apps
+  sharing: {}
+  version: v1
