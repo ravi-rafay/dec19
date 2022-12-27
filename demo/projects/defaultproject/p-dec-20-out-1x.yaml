@@ -9,7 +9,7 @@ spec:
   - config:
       approvers:
       - userName: ravi@rafay.co
-      timeout: 2m23s
+      timeout: 2m10s
       type: Email
     name: approv
     type: Approval
